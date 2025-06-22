@@ -31,7 +31,7 @@ Created by Had_R – 2025
 
 ![IMG1](https://github.com/user-attachments/assets/7d381422-261a-4c78-ba8a-8163241e5374)
 ![IMG2](https://github.com/user-attachments/assets/78c091bb-dfa9-43b2-9da8-d6d15e2daa5e)
-![IMG3](https://github.com/user-attachments/assets/38dddb36-dc37-4279-9c28-c0cb1497c255)
+![IMG3](https://github.com/user-attachments/assets/314e14c7-d54c-412f-a299-06bb18f28144)
 
 
 
