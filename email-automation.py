@@ -140,7 +140,7 @@ message.add_alternative(html, subtype="html")
 
 #Adds pdf file to the messge.
 # Path to the PDF file you want to attach
-pdf_path = "My_Resume.pdf"
+pdf_path = "/content/loremipsum.pdf"
 
 # Read the PDF file in binary mode
 with open(pdf_path, "rb") as f:
@@ -151,7 +151,7 @@ message.add_attachment(
     pdf_data,
     maintype="application",
     subtype="pdf",
-    filename="My_Resume.pdf"
+    filename="lorem_Ipsum.pdf"
 
 )
 
