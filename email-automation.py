@@ -62,7 +62,6 @@ html = f"""
 
             <!-- Header -->
             <tr>
-                        <!-- שינוי צבע ריבוע עליון -->
               <td style="background:linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%); padding:40px; text-align:center;">
                 <h1 style="color:#ffffff; margin:0; font-size:28px;">Your Python Email Report</h1>
               </td>
@@ -83,8 +82,6 @@ html = f"""
             <!-- Body content -->
             <tr>
               <td style="padding:30px; color:#333333; font-size:16px; line-height:1.6;">
-                <p>Hi there,</p>
-
                 <p>Hi there,</p>
 
 <p>
@@ -123,7 +120,7 @@ html = f"""
             <!-- Footer -->
             <tr>
               <td style="background-color:#ecf0f1; padding:20px; text-align:center; font-size:12px; color:#7f8c8d;">
-                <p style="margin:0;">© 2025 Lily Stone. All rights reserved.</p>
+                <p style="margin:0;">© 2025 Had_R. All rights reserved.</p>
                 <p style="margin:5px 0 0;">
                   Don't want these emails? <a href="#" style="color:#1abc9c; text-decoration:none;">Unsubscribe</a>
                 </p>
