@@ -23,7 +23,8 @@ A simple Python script to send styled HTML emails with an attached PDF via Gmail
 - `send_email_with_html_template.py` — the main script
 - `README.md` — this file
 
-✨ Email Output Example
+## ✨ Email Output Example
+
 ![IMG1](https://github.com/user-attachments/assets/7d381422-261a-4c78-ba8a-8163241e5374)
 ![IMG2](https://github.com/user-attachments/assets/78c091bb-dfa9-43b2-9da8-d6d15e2daa5e)
 ![IMG3](https://github.com/user-attachments/assets/314e14c7-d54c-412f-a299-06bb18f28144)
