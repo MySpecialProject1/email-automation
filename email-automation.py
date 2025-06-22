@@ -22,7 +22,6 @@ message["Subject"] = subject
 #The content of the email
 message.set_content(body)
 
-#My faivorite mail version
 html = f"""
 <!DOCTYPE html>
 <html lang="en">
@@ -39,7 +38,7 @@ html = f"""
 
             <!-- Header -->
             <tr>
-              <td style="background-color:#1abc9c; padding:40px; text-align:center;">
+              <td style="background-color:linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%); padding:40px; text-align:center;">
                 <h1 style="color:#ffffff; margin:0; font-size:28px;">Your Python Email Report</h1>
               </td>
             </tr>
@@ -79,7 +78,7 @@ html = f"""
                 <p style="text-align:center; margin:30px 0;">
                   <a
                     href="https://github.com/yourusername/email-automation"
-                    style="background-color:#1abc9c; color:#ffffff; text-decoration:none; padding:14px 24px; border-radius:5px; font-weight:bold; display:inline-block;"
+                    style="background-color:linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%); color:#ffffff; text-decoration:none; padding:14px 24px; border-radius:5px; font-weight:bold; display:inline-block;"
                   >
                     View Project on GitHub
                   </a>
