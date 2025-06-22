@@ -77,6 +77,7 @@ html = f"""
                 <!-- Call-to-action button -->
                 <p style="text-align:center; margin:30px 0;">
                   <a
+                  <!-- Replace the placeholder URL with the actual GitHub repository link -->
                     href="https://github.com/yourusername/email-automation"
                     style="background-color:linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%); color:#ffffff; text-decoration:none; padding:14px 24px; border-radius:5px; font-weight:bold; display:inline-block;"
                   >
