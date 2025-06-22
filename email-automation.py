@@ -2,11 +2,17 @@ import smtplib
 import ssl
 from email.message import EmailMessage
 
+# Set the subject line that appears in the recipient's inbox
 subject = "Email From Python"
+# Set the plain-text version of the email content
 body = "This is a test email from Python!"
-# Define sender and receiver email addresses
-sender_email = "projectmailer122@gmail.com"
-receiver_email = "projectmailer122@gmail.com"
+# Prompt the user to enter the sender and recipient email addresses
+sender_email = input("Enter the sender's email address: ")
+receiver_email = input("Enter the recipient's email address: ")
+# Enter your Gmail App Password.
+# This 16-character password is generated from your Google Account (under Security > App passwords)
+password = input("Enter a password: ")
+
 password = input("Enter a password: ")
 
 message = EmailMessage()
