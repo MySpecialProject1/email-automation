@@ -94,7 +94,7 @@ html = f"""
             <!-- Footer -->
             <tr>
               <td style="background-color:#ecf0f1; padding:20px; text-align:center; font-size:12px; color:#7f8c8d;">
-                <p style="margin:0;">© 2025 Lily Stone. All rights reserved.</p>
+                <p style="margin:0;">© 2025 Had_R. All rights reserved.</p>
                 <p style="margin:5px 0 0;">
                   Don't want these emails? <a href="#" style="color:#1abc9c; text-decoration:none;">Unsubscribe</a>
                 </p>
