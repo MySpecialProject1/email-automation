@@ -28,3 +28,6 @@ A simple Python script to send styled HTML emails with an attached PDF via Gmail
 
 
 Created by Had_R – 2025
+
+![IMG1](https://github.com/user-attachments/assets/7d381422-261a-4c78-ba8a-8163241e5374)
+
