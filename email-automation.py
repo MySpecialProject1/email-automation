@@ -15,6 +15,30 @@ password = input("Enter a password: ")
 
 password = input("Enter a password: ")
 
+import requests
+
+# Latitude and longitude for Victoria, Seychelles
+latitude = -4.617
+longitude = 55.450
+
+# Request weather data from Open-Meteo API
+url = f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m,wind_speed_10m"
+
+response = requests.get(url)
+data = response.json()
+
+# Extract temperature and wind speed values from the response
+temperature = data["current"]["temperature_2m"]
+wind_speed = data["current"]["wind_speed_10m"]
+
+# Build an HTML snippet to include in the email body
+weather_html = f"""
+<ul style="margin:20px 0; padding-left:20px;">
+  <li><strong>Current Temperature:</strong> {temperature}°C</li>
+  <li><strong>Wind Speed:</strong> {wind_speed} m/s</li>
+</ul>
+"""
+
 message = EmailMessage()
 message["From"] = sender_email
 message["To"] = receiver_email
@@ -38,7 +62,8 @@ html = f"""
 
             <!-- Header -->
             <tr>
-              <td style="background-color:linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%); padding:40px; text-align:center;">
+                        <!-- שינוי צבע ריבוע עליון -->
+              <td style="background:linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%); padding:40px; text-align:center;">
                 <h1 style="color:#ffffff; margin:0; font-size:28px;">Your Python Email Report</h1>
               </td>
             </tr>
@@ -60,30 +85,33 @@ html = f"""
               <td style="padding:30px; color:#333333; font-size:16px; line-height:1.6;">
                 <p>Hi there,</p>
 
-                <p>
-                  This is an automated notification sent from our Python script. Below you'll find the summary of today's task execution:
-                </p>
+                <p>Hi there,</p>
 
-                <ul style="margin:20px 0; padding-left:20px;">
-                  <li><strong>Status:</strong> <span style="color:#27ae60;">Success</span></li>
-                  <li><strong>Sent:</strong> 150 emails</li>
-                  <li><strong>Time:</strong> 14:35 UTC, June 12, 2025</li>
-                </ul>
+<p>
+  Just a quick weather update from paradise 🏝️ — straight from our Python script!
+</p>
 
-                <p>
-                  If you encounter any issues, please reply to this email, and our team will look into it.
-                </p>
+<p>
+  Here's the current temperature in the Seychelles, as retrieved from Open-Meteo's live API:
+</p>
 
-                <!-- Call-to-action button -->
-                <p style="text-align:center; margin:30px 0;">
-                  <a
-                  <!-- Replace the placeholder URL with the actual GitHub repository link -->
-                    href="https://github.com/yourusername/email-automation"
-                    style="background-color:linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%); color:#ffffff; text-decoration:none; padding:14px 24px; border-radius:5px; font-weight:bold; display:inline-block;"
-                  >
-                    View Project on GitHub
-                  </a>
-                </p>
+{weather_html}
+
+<p>
+  Have a sunny day and don’t forget the sunscreen ☀️
+</p>
+
+
+                    <!-- Call-to-action button linking to live weather forecast for Seychelles -->
+<p style="text-align:center; margin:30px 0;">
+  <a
+    href="https://www.meteoblue.com/en/weather/week/victoria_seychelles_241131"
+    style="background:linear-gradient(90deg,rgba(42,123,155,1),rgba(87,199,133,1)); color:#ffffff; text-decoration:none; padding:14px 24px; border-radius:5px; font-weight:bold; display:inline-block;"
+  >
+    See Full Forecast for Seychelles
+  </a>
+</p>
+
 
                 <p>
                   Cheers,<br/>
@@ -95,7 +123,7 @@ html = f"""
             <!-- Footer -->
             <tr>
               <td style="background-color:#ecf0f1; padding:20px; text-align:center; font-size:12px; color:#7f8c8d;">
-                <p style="margin:0;">© 2025 Had_R. All rights reserved.</p>
+                <p style="margin:0;">© 2025 Lily Stone. All rights reserved.</p>
                 <p style="margin:5px 0 0;">
                   Don't want these emails? <a href="#" style="color:#1abc9c; text-decoration:none;">Unsubscribe</a>
                 </p>
